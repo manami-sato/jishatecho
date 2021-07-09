@@ -1,0 +1,132 @@
+@media screen and (min-width: 1000px) {
+
+	.photographer {
+		display: flex;
+		align-items: center;
+		/* justify-content: space-around; */
+		padding: 35px 10% 20px;
+	}
+
+	.photographer>div {
+		width: 80%;
+	}
+
+	.photographer>div>div {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.photographer>p img {
+		width: 7vw;
+		margin-right: 3vw;
+	}
+
+
+	/* フォトグラファーリスト（アイコン）ここから */
+	.photographerList{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		text-align: center;
+		padding: 20px 40px 0 60px;
+	}
+	.photographerList>div{
+		display: flex;
+		flex-direction: column;
+		width: 130px;
+		margin: 0 20px 25px 0;
+	}
+	.photographerList div img{
+		width: 130px;
+		height:130px;
+		border-radius: 65px;
+		transition: 0.3s box-shadow;
+	}
+	.photographerList>div:hover img{
+		box-shadow: 0 0 10px #999;
+	}
+	.pgName{
+		font-weight: bold;
+		margin: 10px 0 3px;
+		display: block;
+		/* font-size: 1.2em; */
+	}
+	.photographerList p{
+		height: 130px;
+	}
+	.photographerList>div>div>p{
+		font-size:0.9em;
+	}
+	.pgThis{
+		font-weight: normal;
+	}
+	/* フォトグラファーリスト（アイコン）ここまで */
+
+}
+
+
+
+
+
+@media screen and (max-width: 999px) {
+
+
+	h2 {
+		padding: 0;
+	}
+
+
+	.photographer {
+		display: flex;
+		align-items: center;
+		width: auto;
+		padding: 30px 10vw 20px;
+	}
+
+	.photographer>section>div {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.photographer>div>p {
+		font-size: 0.9em;
+	}
+
+	.photographer>p img {
+		width: 15vw;
+		min-width: 80px;
+		max-width: 140px;
+		margin-right: 3vw;
+	}
+
+	.photographerList{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.photographerList>div{
+		width: 45%;
+	}
+	.photographerList img{
+		width: 60px;
+	}
+	.photographerList>div>a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+		margin-bottom: 3px;
+	}
+	.pgName{
+		margin: 0 auto 0 7px;
+	}
+
+}

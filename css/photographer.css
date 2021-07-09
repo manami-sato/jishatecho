@@ -1,0 +1,99 @@
+@media screen and (min-width: 1000px) { 
+
+
+	.photographerList2{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.photographerList2>div{
+		background: #eee;
+		border-radius: 20px;
+		margin-bottom:20px;
+		width: 47%;
+		display: flex;
+		padding: 25px 15px;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.photographerList2>div a{
+		font-weight: bold;	
+		font-size:1.1em;
+		text-decoration: underline;
+		margin-bottom: 5px;
+	}
+	.photographerList2>div>div>p{
+		font-size:0.9em;
+	}
+	.photographerList2 img{
+		width: 110px;
+		height: 110px;
+	}
+	.photographerList2>div>div{
+		width: 180px;
+		min-width: 100px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2+p{
+		font-size: 0.9em;
+		margin-bottom:35px;
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 999px){
+
+	.photographerList2{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 10vw;
+	}
+	.photographerList2>div{
+		background: #eee;
+		border-radius: 25px;
+		margin:0 auto 20px;
+		width: 100%;
+		max-width: 320px;
+		display: flex;
+		padding: 20px 5%;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.photographerList2>div a{
+		font-weight: bold;	
+		font-size:1.1em;
+		text-decoration: underline;
+		margin-bottom: 5px;
+	}
+	.photographerList2>div>div>p{
+		font-size:0.9em;
+	}
+	.photographerList2 img{
+		width: 40%;
+		max-width: 100px;
+		border: 5px solid #fff;
+		border-radius: 50px;
+	}
+	.photographerList2>div>div{
+		width: 50%;
+		min-width: 100px;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	h2+p{
+		font-size: 0.9em;
+		margin: 0 10vw 35px;
+	}
+
+
+ }

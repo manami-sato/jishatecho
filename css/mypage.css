@@ -1,0 +1,154 @@
+@media screen and (min-width: 1000px) { 
+
+
+
+	.leftcol>h3{
+		display: flex;
+		border-bottom:3px solid #7f3838;
+		margin-left:0 ;
+		margin-right:0 ;
+		justify-content: center;
+	}
+	.leftcol>h3::after{
+		content: "";
+		display: none;
+	}
+	.tabLink{
+		color: #aaa;
+		padding:10px 30px;
+		transition: 0.1s ease-in-out;
+	}
+	#tabLinkAdd{
+		color:#666;
+		background:#eee;
+	}
+	.tabLink:hover,
+	.tabLink:active{
+		color:#666;
+		background:#eee;
+	}
+	h3+div{
+		width: 100%;
+		margin:0 auto;
+	}
+	.tab{
+		display:none;
+	}
+	#tabAdd{
+		display: block;
+	}
+
+	.new,
+	.followList{
+		display: flex;
+		flex-direction: column;
+		padding:40px;
+	}
+
+	.pgContents{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.pgContents>div{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-right: 20px;
+	}
+	.pgContents>div:last-child{
+		margin-right: 0;
+	}
+
+	.new img{
+		width: 160px;
+	}
+	.followList img{
+		width: 100px;
+		height: 100px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 999px){
+
+	h3{
+		display: flex;
+		padding-bottom:0;
+		font-size:1em;
+		justify-content: space-between;
+	}
+	h3 a:link,h3 a:visited{
+		display: block;
+		color: #aaa;
+		padding:10px 40px;
+	}
+	h3 a:hover,h3 a:active{
+		color:#666;
+		background:#eee;
+	}
+	h3 p{
+		padding:10px 40px;
+	}
+	/* h3+div{
+		display: none;
+	} */
+	h3::after{
+		content: "";
+		width: 0;
+		height: 0;
+	}
+
+	.leftcol{
+		display: none;
+	}
+	.formTtl{
+		margin:0;
+	}
+	
+	
+	/* .mypageArrow{
+		width: 17px;
+		height: 17px;
+		border-bottom:1px solid #7f3838;
+		border-right:1px solid #7f3838;
+		transform: rotateZ(45deg);
+		display: block;
+	} */
+	.mypageArrow{
+		display: none;
+	}
+	
+	
+	
+	.new,
+	.followList{
+		display: flex;
+		flex-direction: column;
+		padding:40px;
+	}
+	
+	.pgContents{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.pgContents>div{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-right: 20px;
+	}
+	.pgContents>div:last-child{
+		margin-right: 0;
+	}
+	
+	.new img{
+		width: 160px;
+	}
+	.followList img{
+		width: 100px;
+		height: 100px;
+	}
+
+}

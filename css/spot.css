@@ -1,0 +1,708 @@
+	.changeBtnBox{
+		display: none;
+	}
+
+@media screen and (min-width: 1000px) { 
+
+
+	.mainImg {
+		position: relative;
+		width: 83%;
+		max-width: 1000px;
+		margin-right: 2%;
+	}
+	.mainImg ul {
+		display: flex;
+	}
+	.mainImg li {
+		display: none;
+	}
+	.mainImg li:first-child{
+		display: block;
+	}
+	.mainImg img {
+		width: 100%;
+	}
+	.mainImgBox{
+		display: flex;
+		margin: 0 auto 30px;
+		width: 80vw;
+		max-width: 1100px;
+	}
+
+
+	/* 画像サムネイルここから */
+	.thumbnail{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin:auto 0;
+		height: 100%;
+		width: 15%;
+	}
+	.thumbnail li{
+		width: 85%;
+		transition: 0.3s ease-in-out;
+	}
+	.thumbnail li:first-child{
+		width: 100%;
+	}
+	/* .thumbnail li:hover{
+		width: 100%;
+	} */
+	.thumbnail img{
+		width: 100%;
+	}
+	/* 画像サムネイルここまで */
+
+	/* 画像変更ボタンここから */
+	.changeBtnBox {
+		position: absolute;
+		top: 0;
+		right: 10%;
+		z-index: 5;
+		width: 25%;
+	}
+	.changeBtnBox>div{
+		width: 100%;
+		display: flex;
+	}
+	.changeBtn{
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.3s background;
+	}
+	.changeBtn:hover{
+		background:#eee;
+	}
+	.cb1 {
+		width: 70%;
+		height: 70px;
+		border-radius: 0px 0px 10px 10px;
+	}
+	.cb2 {
+		width: 30%;
+		height: 50px;
+		border-radius: 0px 0px 10px 0px;
+	}
+	.cbCamera::before{
+		content: "";
+		background: url("../img/icon_camera.svg") no-repeat;
+		background-size: contain;
+		background-position: center center;
+		width: 35%;
+		height: 70%;
+	}
+	.cbPhone::before{
+		content: "";
+		background: url("../img/icon_iphone.svg") no-repeat;
+		background-size: contain;
+		background-position: center center;
+		width: 100%;
+		height: 70%;
+	}
+	/* #boxDisplay{
+		display: none;
+	} */
+
+		/* 画像送るボタンここから */
+	.prev,
+	.next {
+		transition: 0.2s background;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		background: rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+	}
+	.prev {
+		left: 30px;
+	}
+	.next {
+		right: 30px;
+	}
+	.prev:after,
+	.next:after {
+		content: "";
+		width: 18px;
+		height: 18px;
+		border-bottom: #fff 4px solid;
+		border-right: #fff 4px solid;
+		margin:0 5px 0 0;
+	}
+	.prev:after{
+		transform: rotate(135deg);
+	}
+	.next:after{
+		transform: rotate(315deg);
+	}
+	.prev:hover,
+	.next:hover {
+		background: rgba(255, 255, 255, 0.7);
+	}
+	/* 画像送るボタンここまで */
+
+	/* 気になるボタンここから */
+	.st0{
+		fill:#AAAAAA;
+	}
+	.st1{
+		fill:#FFFFFF;
+	}
+	.check{
+		width: 80px;
+		height: 80px;
+		display: flex;
+		/* flex-direction: column; */
+		justify-content: center;
+		align-items: center;
+		border: 2px solid #aaa;
+		border-radius: 50px;
+		font-size:0.85em;
+		transition: 0.2s;
+		position: relative;
+		padding-top: 40px;
+		grid-column: 2;
+		grid-row: 1/3;
+		margin:auto auto 0;
+	}
+	.check:hover{
+		border: 2px solid #7f3838;
+		color: #7f3838 ;
+	}
+	.check:hover .st0{
+		fill: #7f3838 ;
+	}
+	.checkAdd{
+		border: 2px solid #7f3838;
+		color: #7f3838 ;
+	}
+	#memo{
+		transition: 0.2s;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top:-10px;
+		left:13px;
+	}
+	/* 気になるボタンここまで */
+
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr 80px;
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 15px;
+	}	
+	h2 {
+		display: flex;
+		align-items: center;
+		font-size: 1.5rem;
+		margin-top:0;
+	}
+	h2::before{
+		content: "";
+		background: url("../img/icon_pin.svg") no-repeat center left;
+		width: 35px;
+		height: 35px;
+	}
+	.spotH2{
+		display: flex;
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.spotH2 p{
+		display: flex;
+		align-items: center;
+	}
+	.spotH2 p::before{
+		content: "-";
+		padding:0 5px 0 30px;
+	}
+	.leftcol>p{
+		font-weight: normal;
+		margin-left:10px;
+		font-size:0.9rem;
+	}
+	.leftcol>p {
+		font-weight: normal;
+		margin-left: 10px;
+		font-size: 0.9rem;
+	}
+	.filter {
+		background: #aaa;
+		color: #fff;
+		grid-column: 1/3;
+		grid-row: 2;
+		margin:0 10px 0 0;
+	}
+	.filterList{
+		margin-top: 7px;
+	}
+	table {
+		width: 100%;
+	}
+	.spotTr {
+		height: 40px;
+	}
+	.spotTh {
+		width: 30%;
+		text-align: center;
+		padding-left: 0;
+	}
+	td iframe {
+		width: 100%;
+		height: 400px;
+	}
+	.nearSpot{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.nearSpot a{
+		width: 100px;
+		height: 130px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		overflow: hidden;
+		margin-right: 10px;
+	}
+	.nearSpot a:last-child{
+		margin: 0;
+	}
+	.nearSpot a img{
+		height: 100px;
+	}
+
+
+
+	/* フォトグラファー */
+	.writer{
+		background: #F7F7F7;
+		border-radius: 20px;
+		width: 100%;
+		padding:20px 30px;
+		margin: 30px auto 15px;
+	}
+	.writer>p{
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		margin-bottom: 13px;
+	}
+	.writer>p::before{
+		content: "";
+		background: url("../img/icon_pen.svg") no-repeat center left;
+		width: 20px;
+		height: 20px;
+		margin-right:5px;
+	}
+	.writer>div{
+		display: flex;
+	}
+	.writerImg{
+		margin:auto 13px auto 0;
+		text-align: center;
+	}
+	.writerImg img{
+		height: 70px;
+		margin-bottom: 10px;
+	}
+	.writerTxtBox{
+		margin: auto 0;
+	}
+	.writerTxt{
+		font-size: 0.9em;
+		text-align: right;
+	}
+	.rcmTxt{
+		margin-bottom: 10px;
+		background: #fff;
+		border-radius: 7px;
+		padding:13px;
+	}
+
+	.spotShere{
+		position: fixed;
+		bottom:150px;
+		right: 50px;
+		display: flex;
+		flex-direction: column;
+		transform: translateX(100px);
+		transition: 0.5s;
+	}
+	.spotShere a{
+		margin-bottom: 10px;
+		box-shadow: 1px 1px 5px #aaa;
+		width: 40px;
+		height: 40px;
+		background-color: #fff;
+	}
+
+
+	.prefNav>h3{
+		margin-top: 0;
+	}
+
+}
+
+
+
+@media screen and (max-width: 999px){
+
+	.check{
+		display: none;
+	}
+
+
+	.spotShere{
+		display: none;
+	}
+
+	.breadcrumbList{
+		margin-bottom:0;
+	}
+	
+	.mainImg{
+		display: flex;
+		position: relative;
+		height: 60vh;
+	}
+	.mainImg ul{
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	.mainImg li:first-child{
+		display:flex;
+		width: 100vw;
+		justify-content: center;
+	}
+	.mainImg li{
+		display: none;
+		height: 100%;
+		width: 100vw;
+	}
+	.mainImg img{
+		height: 100%;
+	}
+
+	/* 画像サムネイルここから */
+	.thumbnail{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		/* flex-wrap: wrap; */
+		margin: 0 auto;
+		height: 100%;
+		width: 90vw;
+		/* overflow-x:scroll ; */
+	}
+	.thumbnail li{
+		width: 25%;
+		transition: 0.3s ease-in-out;
+		/* margin-right: 7px; */
+	}
+	.thumbnail li:first-child{
+		width: 30%;
+	}
+	/* .thumbnail li:hover{
+		width: 30vw;
+	} */
+	.thumbnail img{
+		width: 100%;
+	}
+	/* 画像サムネイルここまで */
+	
+	/* 画像送るボタンここから */
+	.prev,
+	.next {
+		transition: 0.2s background;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		background: rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 45px;
+		height: 45px;
+	}
+	.prev {
+		left: 30px;
+	}
+	.next {
+		right: 30px;
+	}
+	.prev:after,
+	.next:after {
+		content: "";
+		width: 18px;
+		height: 18px;
+		border-bottom: #fff 4px solid;
+		border-right: #fff 4px solid;
+		margin:0 5px 0 0;
+	}
+	.prev:after{
+		transform: rotate(135deg);
+	}
+	.next:after{
+		transform: rotate(315deg);
+	}
+	.prev:hover,
+	.next:hover {
+		background: rgba(255, 255, 255, 0.7);
+	}
+	/* 画像送るボタンここまで */
+	
+	/* 画像変更ボタンここから */
+	.changeBtnBox {
+		position: absolute;
+		top: 0;
+		right: 10%;
+		z-index: 5;
+		width: 250px;
+		/* display: flex; */
+	}
+	.changeBtnBox>div{
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.3s background;
+	}
+	.changeBtnBox>div:hover{
+		background:#eee;
+	}
+	.cb1 {
+		width: 70%;
+		height: 70px;
+		border-radius: 0px 0px 10px 10px;
+	}
+	.cb2 {
+		width: 30%;
+		height: 50px;
+		border-radius: 0px 0px 10px 0px;
+	}
+	.cb1::before{
+		content: "";
+		background: url("../img/icon_camera.svg") no-repeat;
+		background-size: contain;
+		background-position: center center;
+		width: 35%;
+		height: 70%;
+	}
+	.cb2::before{
+		content: "";
+		background: url("../img/icon_iphone.svg") no-repeat;
+		background-size: contain;
+		background-position: center center;
+		width: 100%;
+		height: 70%;
+	}
+	/* 画像変更ボタンここまで */
+	.choiceBox{
+		display: flex;	
+		justify-content: center;
+		margin:15px 40px;
+	}
+	.choice{
+		background: #fff;
+		width: 12px;
+		height: 12px;
+		border-radius: 6.5px;
+		box-shadow: 0px 0px 3px #000;
+		margin:0 10px;
+	}
+	
+	h2{
+		display: flex;
+		align-items: center;
+		font-size:1.5rem;
+		padding:0;
+	}
+	h2::before{
+		content: "";
+		background: url("../img/icon_pin.svg") no-repeat center left;
+		width: 25px;
+		height: 25px;
+	}
+	.spotH2{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 80vw;
+		margin: 15px auto 10px;
+	}
+	.spotH2{
+		display: flex;
+		align-items: center;
+	}
+	.spotH2 p::before{
+		content: "-";
+		margin-right: 10px;
+	}
+	
+	.filter{
+		background:#aaa;
+		color:#fff;
+	}
+	.spotData{
+		width: 85vw;
+		margin: 0 auto;
+		max-width: 680px;
+	}
+	.spotData2{
+		width: 80vw;
+		margin: 0 auto;
+		margin-top: 10px;
+		max-width: 640px;
+	}
+	iframe{
+		width:80vw;
+		max-width: 600px;
+		height:60vw;
+		max-height: 450px;
+	}
+	
+	
+	
+	/* フォトグラファー */
+	.writer{
+		background: #F7F7F7;
+		border-radius: 20px;
+		width: 85vw;
+		max-width: 680px;
+		padding:20px;
+		margin: 30px auto 15px;
+	}
+	.writer>p{
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		margin-bottom: 13px;
+	}
+	.writer>p::before{
+		content: "";
+		background: url("../img/icon_pen.svg") no-repeat center left;
+		width: 20px;
+		height: 20px;
+		padding-right:5px;
+	}
+	.writer>div{
+		display: flex;
+	}
+	.writerImg{
+		margin:auto 13px auto 0;
+		text-align: center;
+	}
+	.writerImg img{
+		height: 50px;
+		margin-bottom: 10px;
+	}
+	.writerTxtBox{
+		margin: auto 0;
+	}
+	
+	
+	.rcmTxt{
+		/* font-weight: bold; */
+		margin-bottom: 7px;
+		background: #fff;
+		border-radius: 7px;
+		padding:13px;
+	}
+	
+	.back{
+		padding:0 7%;
+		font-size: 0.9em;
+	
+	}
+	
+	
+	
+	/* 追加とシェア */
+	.fix{
+		display: flex;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		font-size:0.9em;
+		transform: translateY(100px);
+		transition: 0.3s;
+		z-index: 5;
+	}
+	.fixList,
+	.fixShere{
+		width: 50%;
+		background: rgba(220,220,220,0.8);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.fixList:hover,
+	.fixList:active,
+	.fixShere:hover,
+	.fixShere:active{
+		background: rgba(200,200,200,0.8);
+	}
+	.fixList{
+		border-right:1px solid rgba(180,180,180,0.8);
+	}
+	.fixListIcon{
+		width: 10px;
+		height: 20px;
+		border-bottom: 3px #aaa solid;
+		border-right: 3px #aaa solid;
+		transform: rotate(45deg);
+		margin-left: 15px;
+	}
+	.fixShereIcon{
+		background-image: url("../img/icon_shere.svg"); 
+		background-repeat:no-repeat;
+		background-size:cover;
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+	}
+	.fixShere{
+		position: relative;
+	}
+	.fixShereBtn{
+		display: flex;
+		justify-content: space-around;
+		position: absolute;
+		bottom:70px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 80%;
+		transition: 0.3s;
+		z-index: 3;
+		transform :translateY(200px);
+	}
+	.fixShereBtn>div{
+		text-align: center;
+	}
+	.fixShereBtn img{
+		height: 40px;
+	}
+	
+	.toResult{
+		margin: 0 7vw;
+		font-size:0.9em;
+	}
+
+}

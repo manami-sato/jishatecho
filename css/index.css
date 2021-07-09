@@ -1,0 +1,133 @@
+@media screen and (min-width: 1000px) { 
+
+	.indexHeaderImg{
+		background:#999;
+		margin:0 0 30px;
+		width: 100%;
+		height: 80vh;
+		max-height: 600px;
+		min-height:400px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+	.indexHeaderImg li{
+		display: none;
+	}
+	.indexHeaderImg li:first-child{
+		display: flex;
+		justify-content: center;
+	}
+	.indexHeaderImg img{
+		width: 100%;
+	}
+
+	.indexMain{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/* フォトグラファーリスト（アイコン）ここから */
+	.photographerList{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		text-align: center;
+		padding: 20px 40px 0 60px;
+	}
+	.photographerList a{
+		display: flex;
+		flex-direction: column;
+		width: 130px;
+		margin: 0 20px 25px 0;
+	}
+	.photographerList div img{
+		width: 130px;
+		height:130px;
+		border-radius: 65px;
+		transition: 0.3s box-shadow;
+	}
+	.photographerList>div:hover img{
+		box-shadow: 0 0 10px #999;
+	}
+	.pgName{
+		font-weight: bold;
+		margin: 10px 0 3px;
+		display: block;
+		/* font-size: 1.2em; */
+	}
+	.photographerList p{
+		height: 130px;
+	}
+	.photographerList>div>div>p{
+		font-size:0.9em;
+	}
+	/* フォトグラファーリスト（アイコン）ここまで */
+
+
+	
+}
+
+
+
+@media screen and (max-width: 999px){
+
+
+	.indexHeaderImg{
+		background:#999;
+		margin:0 0 30px;
+		width:auto;
+		height: 65vh;
+		min-height:400px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+	.indexHeaderImg li{
+		display: none;
+	}
+	.indexHeaderImg img{
+		height: 100%;
+	}
+	#indexHeaderImgAdd{
+		display: flex;
+		height: 100%;
+		width: 100vw;
+		justify-content: center;
+	}
+	
+	.indexMain{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	/* .toji:hover,
+	.toji:active{
+		filter: grayscale(70%);
+	} */
+	
+	.photographerList{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.photographerList>div{
+		width: 45%;
+	}
+	.photographerList img{
+		width: 60px;
+	}
+	.photographerList>div>a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+		margin-bottom: 3px;
+	}
+	.pgName{
+		margin: 0 auto 0 7px;
+	}
+
+ }

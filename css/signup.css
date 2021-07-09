@@ -1,0 +1,158 @@
+.bTwitter{
+	background:#55acee url(../img/login_twitter.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #3b92d4;
+}
+.bTwitter:hover{
+	background:#6fc6ff url(../img/login_twitter.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #55acee;
+	text-decoration: none;
+}
+.bLine{
+	background:#00C75F url(../img/login_line.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #00ad45;
+}
+.bLine:hover{
+	background:#1ae179 url(../img/login_line.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #00C75F;
+}
+.bFacebook{
+	background:#3B5998 url(../img/login_facebook.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #213f7e;
+}
+.bFacebook:hover{
+	background:#5573b2 url(../img/login_facebook.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #3B5998;
+}
+.bTumblr{
+	background:#001935 url(../img/login_tumblr.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #00001b;
+}
+.bTumblr:hover{
+	background:#1a334f url(../img/login_tumblr.png) center left 25px no-repeat;
+	box-shadow: 0 5px 0 #001935;
+}
+
+
+@media screen and (min-width: 1000px) { 
+
+	h2 span{
+		margin-bottom: 0;
+	}
+
+	.signupBunner{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 80%;
+		margin: 0 auto;
+		padding-left:10px;
+	}
+	.signupBunner a{
+		display:block;
+		color: #fff;
+		width:47%;
+		min-width: 240px;
+		/* min-width: 200px; */
+		height:60px;
+		border-radius: 7px;
+		font-weight: bold;
+		padding-left:75px;
+		display: flex;
+		align-items: center;
+		margin:0 10px 15px 0;
+	}
+	.signupBunner a:hover{
+		text-decoration: none;
+	}
+
+	.tdText{
+		font-size:0.8em;
+	}
+
+	.signup{
+		display: flex;
+		border-top:3px solid #7f3838;
+		border-bottom:3px solid #7f3838;
+		position: relative;
+		padding: 50px 20vw;
+		margin-top: 100px;
+	}
+	.signupTxt{
+		width: 40vw;
+		padding-right:20px;
+	}
+	.signupTxt>div{
+		margin-bottom: 7px;
+		font-size:1.1em;
+	}
+	.signupTxt>div>span{
+		font-size:1.2em;
+		background: linear-gradient(transparent 50%, #E5DB64 50%);
+		font-weight: bold;
+	}
+
+
+	.signup p{
+		background: #fff;
+		position: absolute;
+		top: -20px;
+		left: 20vw;
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 0 10px;
+	}
+	.signup img{
+		width: 20vw;
+		position: absolute;
+		right: 20vw;
+		bottom: 0;
+	}
+
+	.sendBox{
+		width: auto;
+	}
+
+	.prefNav{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 999px){
+
+	h2 span{
+		margin-bottom: 0;
+	}
+	
+	.signupBunner{
+		display: flex;
+		/* flex-direction: column; */
+		justify-content: center;
+		flex-wrap: wrap;
+		margin:0 auto;
+		width: 80%;
+		max-width: 500px;
+		padding-left:10px;
+	}
+	.signupBunner a{
+		display:block;
+		color: #fff;
+		width:47%;
+		min-width: 240px;
+		/* min-width: 200px; */
+		height:50px;
+		border-radius: 7px;
+		font-weight: bold;
+		padding-left:75px;
+		display: flex;
+		align-items: center;
+		margin:0 10px 15px 0;
+		font-size:0.9em;
+		text-decoration: none;
+	}
+	.signupBunner a:hover{
+		text-decoration: none;
+	}
+
+}
+

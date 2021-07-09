@@ -1,0 +1,21 @@
+p{
+	text-align: center;
+}
+
+h2+p{
+	padding:40px 0;
+	font-size:0.8em;
+}
+
+p>img{
+	width: 300px;
+}
+
+
+@media screen and (min-width: 1000px) { 
+
+	.prefNav{
+		display: none;
+	}
+		
+}

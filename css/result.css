@@ -1,0 +1,100 @@
+
+
+
+@media screen and (min-width: 1000px) { 
+
+
+	h2{
+		font-weight: normal;
+	}
+	.result{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.result span{
+		font-weight: bold;
+	}
+
+	.search{
+		margin: 20px auto 0;
+	}
+
+	.spot:last-child{
+		border-bottom:none;
+	}
+
+
+	.tabLinkBox{
+		display: flex;
+		justify-content:flex-end;
+		margin-top: 5px;
+	}
+	.tabLink{
+		display: inline-block;
+		text-decoration: underline;
+	}
+	.tab{
+		display: none;
+	}
+
+	.tabAdd{
+		display: block;
+	}
+	.tabLinkAdd{
+		text-decoration: none;
+	}
+
+}
+
+
+
+@media screen and (max-width: 999px){
+
+	.result{
+		display: flex;
+		flex-direction: column;
+		background: #f6f6f6;
+		padding:20px 10vw;
+		font-size: 0.9em;
+		font-weight: normal;
+	}
+	.resultTtl{
+		font-size:1em;
+		padding:0;
+	}
+	
+	h2{
+		padding-left:0;
+		padding-right: 0;
+	}
+	h2 span{
+		margin: 0 0 15px;
+	}
+
+	.result>div>div{
+		display: flex;
+		text-align: right;
+	}
+
+	.result span{
+		font-weight: bold;
+	}
+
+	.tab{
+		display: none;
+	}
+
+	.tabAdd{
+		display: block;
+	}
+
+	.tabLinkBox{
+		margin-top: 5px;
+	}
+
+	.leftcol .search{
+		display: none;
+	}
+
+}

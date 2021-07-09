@@ -1,0 +1,33 @@
+@media screen and (min-width: 1000px) { 
+
+	h2+p{
+		padding-bottom: 15px;
+	}
+	.prefNav{
+		display: none;
+	}
+		
+}
+
+
+
+@media screen and (max-width: 999px){
+
+	h2+p{
+		font-size:0.9em;
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	
+	.formTxtBox{
+		margin: 0 auto;
+		width: 80vw;
+	}
+	
+	.formTxt{
+		margin-bottom: 0;
+	}
+
+
+}
